@@ -1,0 +1,18 @@
+.cal{
+width: 200px;
+/* border: 1px solid black; */
+
+
+}
+.cal div{
+    height: 40px;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cal div div{
+cursor: pointer;
+border: 1px solid black;
+/* text-align: center; */
+/* margin: auto; */
+}
