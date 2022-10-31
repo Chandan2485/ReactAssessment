@@ -1,0 +1,27 @@
+.mainDiv{
+    height: 400px;
+    width: 800px;
+    border: 1px solid black;
+    position: relative;
+}
+.Box{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    position: absolute;
+}
+.TopLeft{
+  left: 0;
+}
+.TopRight{
+    right: 0;
+}
+.BottomRight{
+    right: 0;
+    bottom: 0;
+}
+.BottomLeft{
+    left: 0;
+    bottom: 0;
+}
