@@ -4,7 +4,11 @@ export function Animation (){
 
     const [classname,setClassName]=useState()
     return(
-        <div>chandan</div>
+        <div className="mainDiv">
+        <div classname="Box TopLeft TopRight BottomRight BottomLeft">
+
+        </div>
+    </div>
     )
         
     
