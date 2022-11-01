@@ -1,48 +1,43 @@
-import './Animation.css'
-import React,{useState} from "react";
-// import { useEffect } from 'react';
+import "./Animation.css";
+import React, { useState } from "react";
+import { useEffect } from "react";
 
-let index=0
+export function Animation() {
+  const classnamearr = ["TopLeft", "TopRight", "BottomRight", "BottomLeft"];
+  const [index, setIndex] = useState(0);
 
-export function Animation (){
-
-    const [classnamearr,setClassNameArr]=useState(['TopLeft','TopRight','BottomRight','BottomLeft'])
-    const [classname,setClassName]=useState('TopLeft')
-    // const [index,setIndex]=useState(2)
-
-
-
-    setInterval(() => {
-        setClassName(classnamearr[index])
-        if(index===3){
-                    index=0
-                }else{
-                    index++
-                }
+useEffect (()=>{
+  const interval =setInterval(() => {
+      (index===3)?  setIndex(0):setIndex(index => index + 1);
+        console.log(index);
     }, 2000);
-
-
-
-
-
-    // useEffect(()=>{
-    //     console.log(index)
-    //     if(index===3){
-    //         setIndex(0)
-    //     }else{
-    //         setIndex((prev) => prev + 1)
-    //     }
-    // },[classname])
-
-
-
-    return(
-        <div className="mainDiv">
-        <div className={`Box ${classname}`}>
-       
-        </div>
+    return()=> clearInterval(interval)
+},[index])
+  
+  return (
+    <div className="mainDiv">
+      <div className={`Box ${classnamearr[index]}`}></div>
     </div>
-    )
-        
-    
+  );
 }
+
+
+//  useEffect(()=>{
+  //       if(index===3){
+  //     setIndex(0)
+  //       }
+  //       clearInterval(timerRef)
+  //       timerfun()
+
+  //       return(()=>{
+  //         clearInterval(timerRef)
+  //       })
+  //   },[index])
+
+
+  // const timerfun =()=>{
+  //  const interval =  setInterval(() => {
+  //     setIndex(index + 1);
+  //       }, 2000);
+  //       setTimerRef(interval)
+  // }

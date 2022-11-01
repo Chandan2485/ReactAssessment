@@ -3,12 +3,13 @@
     width: 800px;
     border: 1px solid black;
     position: relative;
+    background-color: black;
 }
 .Box{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: brown;
+    background-color: white;
     position: absolute;
 }
 .TopLeft{
