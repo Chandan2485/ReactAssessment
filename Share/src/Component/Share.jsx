@@ -1,7 +1,7 @@
-import './Calculator.css'
+import './Share.css'
 import React, { useState } from "react";
 
-export function Calculator() {
+export function Share() {
 const [showBox,setShowBox]=useState(false)
 const [showBottomBox,setShowBottomBox]=useState(false)
 const [showSearchBox,setShowSearchBox]=useState(false)
