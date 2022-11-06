@@ -1,0 +1,12 @@
+.main{
+border: 2px solid black;
+display: inline-block;
+padding: 7px;
+text-align: center;
+}
+.time{
+margin-bottom: 7px;
+}
+.btnstart{
+margin-right: 10px;
+}
